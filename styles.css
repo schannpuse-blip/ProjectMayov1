@@ -1,0 +1,142 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 1vw;
+  background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(46, 59, 37);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb::hover {
+  background-color: rgb(172, 255, 139);
+}
+
+.Mainpic {
+  position:absolute;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(Placeholders/placeholderELYAN.jpg);
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 9/11; background-repeat: no-repeat; background-size: cover; background-position: center; 
+}
+
+.Greet {
+  font-size:clamp(1.5rem, 8vw, 8rem);
+  position: relative;
+  color: transparent;
+  -webkit-text-stroke: 0px rgba(0, 0, 0, 0.632);
+  opacity:hidden;
+  overflow:hidden;
+  letter-spacing: 1.6vw;
+  width: 100%;
+  font-family:Lucida Handwriting, cursive;
+  text-shadow:none;
+  bottom:6%;
+  height: 70vw;
+  top: 10%;
+}
+
+body{
+  overflow:hidden;
+}
+
+span {
+  position:relative;
+  animation: bounce 0.7s ease forwards;
+  display: inline; justify-content: flex-start;
+  flex-wrap: nowrap;
+  gap:0px;
+}
+
+.fadein1 {
+  font-size:clamp(4rem, 17vw, 16rem);
+  color: transparent;
+  -webkit-text-stroke: 0px rgba(0, 0, 0, 0.632);
+  letter-spacing: 1.6vw;
+  opacity:hidden;
+  left: 4%;
+}
+
+.fadein2 {
+  font-size:clamp(2.6rem, 10vw, 13rem);
+  color: transparent;
+  -webkit-text-stroke: 0px rgba(0, 0, 0, 0.632);
+  opacity:hidden;
+  left: 60%;
+  top: 20%;
+  margin:0%;
+  padding:0%;
+  bottom: 40%;
+}
+
+.fadein3 {
+  font-size:clamp(2.6rem, 10vw, 13rem);
+  color: transparent;
+  -webkit-text-stroke: 0px rgba(0, 0, 0, 0.632);
+  letter-spacing: 0px;
+  opacity:hidden;
+  left: 60%;
+  margin:0%;
+  padding:0%;
+}
+
+h1 span:nth-child(2) {
+  animation-delay: 0s;
+}
+
+h1 span:nth-child(3) {
+  animation-delay: 0.6s;
+  animation-duration: 1.4s;
+}
+
+h1 span:nth-child(4) {
+  animation-delay: 0.9s;
+  animation-duration: 1.4s;
+}
+
+@keyframes bounce {
+  0% {
+    top: 50px;
+    opacity:hidden;
+     -webkit-text-stroke: 0px rgba(0, 0, 0, 0.632);
+    text-shadow: none;
+  }
+
+  20% {
+    opacity: visible;
+    -webkit-text-stroke: 0.1px rgba(0, 0, 0, 0.632);
+    }
+  
+  100% {
+    top:70px;
+    opacity: visible;
+    color:rgb(255, 255, 255);
+    -webkit-text-stroke: 0.01px rgba(0, 0, 0, 0.632);
+    text-shadow: 0px 0px 10px rgba(42, 180, 40, 0.355),
+                0px 0px 15px rgba(42, 180, 40, 0.173),
+                0px 0px 20px rgba(42, 180, 40, 0.21),
+                0px 0px 25px rgba(42, 180, 40, 0.104),
+                0px 0px 50px rgba(42, 180, 40, 0.163);
+  }
+}
+
+.banner{
+  position:absolute;
+  width:100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(IMG/oldpainting.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.Caption{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: clamp(0.8rem, 3vw, 4rem);
+}
