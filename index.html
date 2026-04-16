@@ -23,7 +23,7 @@
     display: flex; align-items: center; justify-content: space-between; width: 100%; margin-left:3vw;
 }
 .logo a{
-    font-size: clamp(0.8rem, 3.1vw, 1.6rem); font-weight:200; color:rgb(44, 82, 18);
+    font-size: clamp(1rem, 3.7vw, 1.9rem); font-weight:200; color:rgb(44, 82, 18);
 }
     li{
         list-style: none; display: inline-block;
@@ -31,7 +31,13 @@
     li a{
         color:rgb(0, 0, 0); font-size: clamp(0.8rem, 3vw, 1.4rem); font-weight: bold; margin-right: 25px;
     }  
-    button{background-color: rgb(17, 73, 20); margin-left: 20vw; border-radius: clamp(10px, 3vw, 10px); border-color: rgb(33, 140, 15); padding: 1vw; width: clamp(10vw, 13vw, 19vw);}
+    button{background-color: rgb(17, 73, 20); margin-left: 20vw; border-radius: clamp(5vw, 7vw, 9vw); border-color: rgb(33, 140, 15); padding: 1vw; width: clamp(10vw, 13vw, 19vw);
+        height: 7vw; position: relative;
+        display: flex; align-items: center; justify-content: center;
+        z-index: 100;
+        transition: 0.3s;
+        cursor: pointer;
+    }
     button a{
         color: rgb(255, 255, 255); font-size: clamp(0.6rem, 2vw, 1rem); font-weight: bold; top: 2%;
     }
